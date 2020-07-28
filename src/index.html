@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Philip Bardy">
+  <meta name="description" content="Othello">
+  <title>Othello</title>
+  <link rel="stylesheet" type="text/css" href="public/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/pages.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/media.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/animation.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="module" src="public/js/app.js" defer></script>
+  <script type="text/javascript" src="public/js/main.js"></script>
+</head>
+
+<body>
+  <div class="app">
+    <!-- Page Zero -->
+    <div class="page" id="page0">
+      <div class="content center">
+        <div class="vbox center">
+          <div class="hbox title-container">
+            <h2>Othello</h2>
+            <div class="button center" id="new-game">
+              <span class="material-icons">add</span>
+            </div>
+          </div>
+          <div class="hbox scores">
+            <div class="hbox expand" id="player1">
+              <div class="hbox">Player One</div>
+              <div class="hbox" id="player1-score">2</div>
+            </div>
+            <div class="hbox expand" id="player2">
+              <div class="hbox">Player Two</div>
+              <div class="hbox" id="player2-score">2</div>
+            </div>
+          </div>
+          <div class="game-container" id="board"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page One -->
+    <div class="page" id="page1">
+      <div class="content center">
+        <div class="vbox">
+          <div class="hbox title-container">
+            <h2>Game Over</h2>
+          </div>
+          <div class="hbox center">
+            <span id="winner"></span>
+          </div>
+          <div class="hbox center">
+            <a href="#page0">
+              <div class="button">
+                <span>Play Again</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

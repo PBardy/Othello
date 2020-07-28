@@ -1,0 +1,11 @@
+@media screen and (max-width:600px) {
+  #page0 h2, #page1 h2 {
+    font-size: 300%;
+  }
+  #page0 #new-game span {
+    font-size: 300%;
+  }
+  #page0 .scores {
+    font-size: 125%;
+  }
+}

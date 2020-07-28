@@ -1,0 +1,110 @@
+#page0 {
+  font-family: 'Work Sans';
+  background: #eee;
+}
+
+#page0 h2, #page1 h2 {
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #222;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#page0 .title-container, #page1 .title-container {
+  width: 100%;
+}
+
+#page0 .game-container {
+  display: grid;
+  width: 520px;
+  height: 520px;
+  max-width: calc(100vmin - 10px);
+  max-height: calc(100vmin - 10px);
+  grid-gap: 2px;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  background-color: #000;
+  border: 5px solid #000;
+}
+
+#page0 .game-container .cell {
+  background-color: #009067;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#page0 .game-container .disc {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+
+#page0 .game-container .disc--new {
+  animation: appear 0.5s;
+  z-index: 10;
+}
+
+#page0 .game-container .disc--empty {
+  cursor: pointer;
+  background-color: #009067;
+  border: 1px solid #515856;
+  z-index: 1;
+  transition: all 0.5s ease; 
+}
+
+#page0 .game-container .disc--empty:hover {
+  background-color: #30C097;
+}
+
+#page0 .scores {
+  color: #252525;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+}
+
+#page0 .scores > div:last-child {
+  flex-direction: row-reverse;
+}
+
+#page0 #new-game span {
+  color: #333;
+  font-size: 3rem;
+  border-radius: 4px;
+  background-color: #aaa;
+}
+
+#page0 #player1-score {
+  padding-left: 15px;
+}
+
+#page0 #player2-score {
+  padding-right: 15px;
+}
+
+#page1 {
+  background-color: rgba(255,255,255,0.7);
+  z-index: 100;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#page1 h2 {
+  margin-bottom: 1em;
+}
+
+#page1 .button {
+  color: #fff;
+  background-color: #222;
+  margin-top: 1em;
+  padding: 0.25em 1em;
+  font-weight: 900;
+}
